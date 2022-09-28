@@ -215,3 +215,11 @@ h2 {
   font-weight: bold;
   font-style: italic;
 }
+.signiture {
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+  font-size: small;
+  font-weight: initial;
+  font-style: italic;
+}
