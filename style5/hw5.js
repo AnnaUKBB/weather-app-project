@@ -62,7 +62,24 @@ function searchNewCity(city) {
 
   axios.get(apiUrl).then(foundWeather);
 }
+function convertToFarenfeit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = 77;
+}
 
+function convertToCelcius(event) {
+  event.preventDefault();
+
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = 25;
+}
+
+let farenheitLink = document.querySelector("#farenheit-link");
+farenheitLink.addEventListener("click", convertToFarenfeit);
+
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", convertToCelcius);
 function searchInput(event) {
   event.preventDefault();
   let city = document.querySelector("#enter-city-form").value;
