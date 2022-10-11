@@ -2,7 +2,7 @@
   border: solid 2px #5ac2f0;
   border-radius: 10px;
   padding: 10px;
-  max-width: 700px;
+  max-width: 500px;
 }
 .current-time,
 .current-date {
@@ -11,24 +11,22 @@
   font-family: "Roboto", sans-serif;
   font-style: italic;
   margin: 0px 0px 0px 10px;
+  max-width: 300px;
 }
 .current-date {
   font-weight: bold;
   margin: 0px 5px 5px 10px;
 }
 
-.city-search {
-  margin-left: 40px;
-}
 .enter-city {
   border: 2px solid #5ac2f0;
-  border-radius: 20px;
-  width: 300px;
+  border-radius: 10px;
+  width: 200px;
   margin: 0px 5px 0px 20px;
 }
 .put-search {
   border: 2px solid #5ac2f0;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 50px;
   margin: 0 auto;
 }
@@ -36,8 +34,24 @@
 .enter-city:hover {
   border: 2px solid #1ab2a8;
 }
+.search-form {
+  padding: 5px;
+}
+.present-location {
+  border-radius: 10px;
+
+  color: #1ab2a8;
+  font-size: medium;
+  border: 2px solid #07dada;
+  margin-left: 350px;
+}
+.present-weather {
+  margin-left: 350px;
+  margin-top: 20px;
+  max-width: 100px;
+}
 .current-information {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 10px 0px;
 }
 h1 {
   color: #1ab2a8;
@@ -61,63 +75,36 @@ h2 {
 }
 
 .sunny {
-  margin: 15px 100px;
+  margin: 15px 170px;
 }
 
 .thermometer {
   height: 40px;
   width: 40px;
-  margin: 0px 70px;
+  margin: 0px 200px;
 }
 .max-temperature,
 .min-temperature {
-  margin: 0px 70px;
+  margin: 0px 200px;
   font-size: 14px;
   font-style: italic;
   color: grey;
 }
-.current-wind {
-  margin: 0px 80px;
-}
 
-.big-arrow {
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 50px;
-  color: #5ac2f0;
-}
-.windspeed {
-  font-style: italic;
-  font-weight: bold;
-  color: grey;
-}
 .col-1 {
   margin: 14px;
 }
-.present-location {
-  position: relative;
-  left: 100px;
-  border-radius: 10px;
-  margin: 20px;
-  padding: 10px;
-  color: #1ab2a8;
-  font-size: medium;
-  border: 2px solid #5ac2f0;
-}
+
 .forecast-after {
-  margin: 5px 50px;
+  margin: 10px 20px;
 }
-.forecast-direction {
-  margin: 5px 50px;
-}
+
 .forecast-temperature {
   font-weight: bold;
   font-size: 12px;
 }
 
 .day1 {
-  border: solid #ffa726;
-  border-radius: 50px;
   width: 110px;
   font-size: 10px;
   color: gray;
@@ -127,8 +114,6 @@ h2 {
   text-align: center;
 }
 .day2 {
-  border: solid #ffa726;
-  border-radius: 50px;
   width: 110px;
   font-size: 10px;
   color: gray;
@@ -136,8 +121,6 @@ h2 {
   text-align: center;
 }
 .day3 {
-  border: solid yellow;
-  border-radius: 50px;
   width: 110px;
   font-size: 10px;
   color: gray;
@@ -148,8 +131,6 @@ h2 {
 }
 
 .day4 {
-  border: solid #006ec5;
-  border-radius: 50px;
   width: 110px;
   font-size: 10px;
   color: gray;
@@ -160,8 +141,6 @@ h2 {
 }
 
 .day5 {
-  border: solid #006ec5;
-  border-radius: 50px;
   width: 110px;
   font-size: 10px;
   color: gray;
@@ -171,50 +150,6 @@ h2 {
   text-align: center;
 }
 
-.wind1,
-.wind2,
-.wind3,
-.wind4,
-.wind5 {
-  color: grey;
-  margin: 0px 0px 0px 10px;
-}
-.wind1 {
-  position: relative;
-  left: -5px;
-}
-
-.wind2 {
-  position: relative;
-  left: 30px;
-}
-
-.wind3 {
-  position: relative;
-  left: 45px;
-}
-
-.wind4 {
-  position: relative;
-  left: 70px;
-}
-
-.wind5 {
-  position: relative;
-  left: 95px;
-}
-
-.small-arrow {
-  color: #006ec5;
-  font-weight: bolder;
-  font-size: 15px;
-}
-
-.small-speed {
-  font-size: 12px;
-  font-weight: bold;
-  font-style: italic;
-}
 .signiture {
   padding-top: 20px;
   display: block;

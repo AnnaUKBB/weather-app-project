@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
 
-    <title>Weather FC</title>
+    <title>Weather app</title>
   </head>
   <body>
     <div class="container">
@@ -28,6 +28,8 @@
         <header>
           <p class="current-time" id="currentTime">12:00</p>
           <p class="current-date" id="currentDate">Thursday, 25 August</p>
+
+          <button class="present-location">My weather</button>
         </header>
 
         <div class="city-search">
@@ -41,9 +43,10 @@
                   placeholder="     Enter city..."
                 />
               </div>
+
               <div class="col-6">
                 <input
-                  class="put-search col-2"
+                  class="put-search col-4"
                   type="submit"
                   value="🔎"
                   autocomplete="off"
@@ -77,16 +80,6 @@
                 width="50px"
               />
               <p class="min-temperature">min.18°C</p>
-            </div>
-
-            <div class="col-2">
-              <div class="current-wind">
-                <span class="big-arrow">↗</span
-                ><span class="windspeed">2m/s</span>
-              </div>
-            </div>
-            <div class="col-3">
-              <button class="present-location">My weather</button>
             </div>
           </div>
         </div>
@@ -140,53 +133,15 @@
           </div>
         </div>
 
-        <div class="forecast-direction">
-          <div class="row">
-            <div class="col-2">
-              <div class="wind1">
-                <span class="small-arrow">↗</span>
-                <span class="small-speed">1.5m/s</span>
-              </div>
-            </div>
-
-            <div class="col-2">
-              <div class="wind2">
-                <span class="small-arrow">⬆</span
-                ><span class="small-speed">2m/s</span>
-              </div>
-            </div>
-
-            <div class="col-2">
-              <div class="wind3">
-                <span class="small-arrow">➡</span
-                ><span class="small-speed">2m/s</span>
-              </div>
-            </div>
-
-            <div class="col-2">
-              <div class="wind4">
-                <span class="small-arrow">↗</span
-                ><span class="small-speed">3m/s</span>
-              </div>
-            </div>
-
-            <div class="col-2">
-              <div class="wind5">
-                <span class="small-arrow">↗</span
-                ><span class="small-speed">1m/s</span>
-              </div>
-            </div>
-            <header class="signiture">
-              <a
-                href="https://github.com/AnnaUKBB/weather-app-project"
-                class="git-link"
-                target="_blank"
-                >Open-source code</a
-              >
-              by Anna Loboda
-            </header>
-          </div>
-        </div>
+        <header class="signiture">
+          <a
+            href="https://github.com/AnnaUKBB/weather-app-project"
+            class="git-link"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Anna Loboda
+        </header>
       </div>
     </div>
     <script src="style5/hw5.js"></script>
