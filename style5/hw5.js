@@ -105,3 +105,22 @@ let presentLocationButton = document.querySelector("button");
 presentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchNewCity("New York");
+
+function displayTemperature(response) {
+  let cityElement = document.querySelector("#city");
+
+  let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
+
+  celsiusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  cityElement.innerHTML = response.data.name;
+
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  let iconElement = document.querySelector("icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+}
